@@ -5,6 +5,51 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../public/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: url(../public/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../public/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PoppinsSemiBold;
+  src: url(../public/fonts/Poppins-SemiBold.ttf);
+}
+
+h1, h2, h3, h4{
+  font-family: PoppinsBold;
+  color: #050463;
+}
+
+p, a{
+  font-family: PoppinsRegular;
+  color: #050463;
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
+}
+
+input:focus{
+  outline: solid #05046320 1px;
+}
+
+textarea{
+  font-family: PoppinsRegular;
+  font-size: 1rem;
+  resize: none;
+}
+
+textarea:focus{
+  outline: none;
 }
