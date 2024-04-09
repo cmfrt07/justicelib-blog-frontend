@@ -31,7 +31,7 @@ function App({ Component, pageProps }) {
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <Head>
-            <title>Next.js App</title>
+            <title>Justicelib Blog</title>
           </Head>
           <Component {...pageProps} />
         </PersistGate>

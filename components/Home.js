@@ -37,7 +37,7 @@ function Home() {
             <a href="https://declarations.justicelib.fr/" className={styles.retourLink}>←&nbsp;Retour</a>
         </button>
         <div className={styles.articlesTitle}>
-          <h1>Nos articles Justicelib</h1>
+          <h1>Articles</h1>
           <p>Retrouvez ici tous nos différents articles consacrés à l'univers des lettres de mise en demeure. Que vous soyez un professionnel cherchant à comprendre les nuances légales de ces documents ou un particulier souhaitant défendre ses droits avec efficacité, notre site vous propose des guides complets, des astuces pratiques et des analyses approfondies. Découvrez comment maximiser l'impact de vos mises en demeure et apprenez à naviguer avec aisance dans les méandres des obligations légales.</p>
         </div>
         <div className={styles.articlesContainer}>
