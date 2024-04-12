@@ -10,6 +10,11 @@ function Navbar(){
             <h1>Justicelib</h1>
           </div>
           </Link>
+          <Link href="https://declarations.justicelib.fr/">
+            <a  className={styles.btnGoJL}>
+              Créer ma mise en demeure
+            </a>
+          </Link>
         </div>
   )
 }

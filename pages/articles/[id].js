@@ -74,11 +74,18 @@ function Article() {
       {renderContent(content)}
 
     </div>
-    <button href="" className={styles.moreArticle}>
+    <div className={styles.moreArticleBox}>
+    <button href="" className={styles.moreArticleBis}>
       <Link href='/blog'>
-        <a style={{color: '#ffffff'}}>Plus d'articles</a>
+        <a>Plus d'articles</a>
       </Link>
-      </button> 
+    </button>
+    <button href="" className={styles.moreArticle}>
+      <Link href='https://declarations.justicelib.fr/'>
+        <a style={{color: '#ffffff'}}>Creer ma mise en demeure</a>
+      </Link>
+    </button>
+    </div>
       <p className={styles.footer}>© Justicelib 2024</p>  
     </div>
 
