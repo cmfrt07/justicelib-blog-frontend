@@ -45,14 +45,24 @@ function Article() {
   }, [id]);
 
   const renderContent = (content) => {
-  return content.split(/\*\*(.*?)\*\*/).map((text, index) => {
-    return index % 2 === 1 ? (
-      <h3 key={index}>{text}</h3>
-    ) : (
-      <p key={index}>{text}</p>
-    );
-  });
-};
+    return content.split('\n').map((paragraph, paraIndex) => {
+      // Pour chaque paragraphe, traiter le texte gras
+      return (
+        <p key={paraIndex}>
+          {paragraph.split(/\*\*(.*?)\*\*/).map((text, index) => {
+            // Si l'index est impair, c'est du texte en gras
+            return index % 2 === 1 ? (
+              <h3 key={index}>{text}</h3>
+            ) : (
+              <span key={index}>{text}</span>
+            );
+          })}
+          <br />
+        </p>
+      );
+    });
+  };
+  
 
 
   return (
