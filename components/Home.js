@@ -45,7 +45,7 @@ function Home() {
 
 
 
-        {articles.map((article, index) => (
+        {articles.slice().reverse().map((article, index) => (
           <a key={index} className={styles.articlePreview} href={`/articles/${article._id}`}>
             <img src={article.url} alt={article.titre} />
             <h3>{article.titre}</h3>
